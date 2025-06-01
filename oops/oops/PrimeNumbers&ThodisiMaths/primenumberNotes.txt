@@ -1,0 +1,10 @@
+--->
+SOE
+
+
+What are the Prime Numbers?
+
+--->
+a*b=c hai to agar a increase kr raha hoga to uss case me b ko decrease hona hi padega to make it constant
+
+--->

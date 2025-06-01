@@ -1,0 +1,60 @@
+#include<iostream>
+#include<unordered_set>
+#include<vector>
+using namespace std;
+
+class Solution {
+public:
+    int reverse(int n){
+        int r=0;
+        while(n>0){
+            r*=10;
+            r+=(n%10);
+            n/=10;
+        }
+        return r;
+
+    }
+    int countDistinctIntegers(vector<int>& nums) {
+        int n=nums.size();
+        for(int i=0;i<n;i++){
+            int rev=reverse(nums[i]);
+            nums.push_back(rev);
+        }
+
+        unordered_set<int>s;
+         n=nums.size();
+        for(int i=0;i<n;i++){
+            int rev=reverse(nums[i]);
+            s.insert(nums[i]);
+        }
+        return s.size();
+
+    }
+};
+// find maximum numbers of strings pairs 
+// 
+class Solution {
+public:
+    int reverse(int n){
+        int r=0;
+        while(n>0){
+            r*=10;
+            r+=(n%10);
+            n/=10;
+        }
+        return r;
+
+    }
+    int countDistinctIntegers(vector<int>& nums) {
+        int n=nums.size();
+        unordered_set<int>s;
+        for(int i=0;i<n;i++){
+            int rev=reverse(nums[i]);
+            s.insert(rev);
+            s.insert(nums[i]);
+        }
+        return s.size();
+
+    }
+};

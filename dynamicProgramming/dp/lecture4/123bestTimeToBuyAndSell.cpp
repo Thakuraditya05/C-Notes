@@ -1,0 +1,1 @@
+// it is similar to 188 with k=2

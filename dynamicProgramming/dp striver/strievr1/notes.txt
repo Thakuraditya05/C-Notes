@@ -1,0 +1,4 @@
+dyanamic programming 
+    tabulation method (bottom to top DP) and time complexity and space optimiztion
+    memozation method (top to down DP)and time complexity and space optimiztion
+

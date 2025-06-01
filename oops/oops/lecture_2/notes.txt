@@ -1,0 +1,172 @@
+what is data abstraction?
+jo kaam ki cheez hai usko dikhao jo kaam ki cheez nahi hai usjko chipa lo jaise kon kon se data use ho rahe hai usko chipa lo bs 
+---->    
+what is data incaplusulation?   
+
+// bekar tarika to store info for users
+//  int health[100]={};
+//  int score[100]={};
+//  char name[100][10]={};
+
+multiple data type ko ek data type me rakh diya   Student
+class Student{ //user defined data type like int, float, .....// call true encapslution
+    char name[20];
+    int rollNo;
+    int age;
+    int mobNo;
+    char address[50];
+};
+
+what is inheritance?
+what iis polymorphism ? --> overloading and 
+
+=---->
+lets understand class 
+class Student{ //blue print  ofr data type 
+public:
+    int score;
+    int health;
+    string name;
+};
+int a =5; heap memroy me ek variable stored ho jata jai a naam ka 
+Student amit; // ek bject hai    whose data type is defined at above 
+    amit.health=100;
+    amit.name="amit";
+    amit.score=90;
+    cout<<amit.health<<endl;
+    cout<<amit.name<<endl;
+    cout<<amit.score<<endl;
+    ---->
+ Student gupta; // ek bject hai    whose data type is defined at above 
+    gupta.health=500;
+    gupta.name="gupta";
+    gupta.score=12;
+    cout<<gupta.health<<endl;
+    cout<<gupta.name<<endl;
+    cout<<gupta.score<<endl;
+real life programming
+--->
+public: //taki variable ko bahar se access kr sake, access modifiers2
+access modifiers2
+kon kon access kr skta hai 
+class Student{ //blue print  ofr data type 
+public: //taki variable ko bahar se access kr sake, access modifiers2 
+data member , can be public, private, protected 
+    int score;
+    int health;
+private:   just think ki aap ka opponent kon kon si cheeze apke bare me dekh skta hai orr kon ko cheeze nahi dekh skta ai 
+    string name;
+};
+
+...../////////
+....................arrays vs oops
+#include<bits/stdc++.h>
+using namespace std;
+
+class Student{ //blue print  ofr data type 
+public: //taki variable ko bahar se access kr sake, access modifiers2
+    int score;
+    int health;
+    string name;
+};
+
+int main(){
+    Student amit; // ek bject hai    whose data type is defined at above 
+    amit.health=100;
+    amit.name="amit";
+    amit.score=90;
+    cout<<amit.health<<endl;
+    cout<<amit.name<<endl;
+    cout<<amit.score<<endl;
+
+    Student gupta; // ek bject hai    whose data type is defined at above 
+    gupta.health=500;
+    gupta.name="gupta";
+    gupta.score=12;
+    cout<<gupta.health<<endl;
+    cout<<gupta.name<<endl;
+    cout<<gupta.score<<endl;
+
+
+    // approch 2 arrays vs class 
+    int score[10];
+    int health[100];
+    // ....
+    Student  player[10];
+    player[0]=amit;
+    player[1]=gupta;
+}
+
+----->
+class Calculator{  
+public:  
+  int a; //data member 
+  int b;
+meber fuction easily  data member ko access kr pate hai 
+  void add(){ // member function   
+    cout<<a+b<<endl;
+  }
+  void subtract(){
+    cout<<a-b<<endl;
+  }
+  void multiply(){
+    cout<<a*b<<endl;
+  }
+  void division(){
+    cout<<a/b<<endl;
+  }
+
+};
+class Calculator{  
+private: 
+  int a; //data member 
+  int b;
+  public ; agar public nahi kiya to bahar se bula bhi nahi skte hai functionn ko 
+//mai function ko access kr skat ahu orr function class ko access kr skte hai 
+  void add(){ // member function   
+    cout<<a+b<<endl;
+  }
+  void subtract(){
+    cout<<a-b<<endl;
+  }
+  void multiply(){
+    cout<<a*b<<endl;
+  }
+  void division(){
+    cout<<a/b<<endl;
+  }
+
+};
+cal.a=10;
+   cal.b=7;
+   cal.add();
+   cal.subtract();
+   cal.multiply();
+   cal.division();
+
+ class Calculator{  
+private: 
+  int a; //data member 
+  int b;
+meber fuction easily  data member ko access kr pate hai 
+  void add(){ // member function   
+    cout<<a+b<<endl;
+  }
+  void subtract(){
+    cout<<a-b<<endl;
+  }
+  void multiply(){
+    cout<<a*b<<endl;
+  }
+  void division(){
+    cout<<a/b<<endl;
+  }
+
+};
+cal.a=10;
+   cal.b=7;
+   cal.add();
+   cal.subtract();
+   cal.multiply();
+   cal.division();  
+shidhi baad no bak was clas ke under data type data memeber nd class ke under fuction data function 

@@ -1,0 +1,197 @@
+---->
+constructor;
+class hai to constructor to hoga hi hoga  mandootary hai 
+hidden fnction jo ki memry allocation krta hhai 
+by declaring and intialising object of the class 
+constructor class ke under banate hai 
+hrr object bnne ke baad constructor call hota hhai 
+
+--->
+--->
+deep and shallow copy 
+Bike b1(50,100);
+Bike b2;
+b2=b1;//shallow copy
+--->
+
+---->
+copy constructor
+isska kaam hota hai just to create copy deep copy 
+Bike b2(b1);
+Bike b2=b1;copy constructor called 
+
+
+--->
+copy constructor argument me ussi class ki object leta leta hai 
+Bike (Bike b){
+    cout<<"wrong way";
+    cout<<"gives iinfinit loop;
+}
+Bike (Bike &b){
+    cout<<"corrcet  way";
+    cout<<"gives finit loop;
+}
+
+--->
+static variable 
+
+
+    static int  noOfbikes; //this belong too the class only 
+    int tyreSize;
+    int engineSize;
+static variable kisi object ko belong nnahi krte;
+static function ksi object ko belong nahi kkrte hai 
+static member keval 
+
+
+--->
+    // initialisation list 
+    Bike(int tS, int eS=200):tyreSize(tS),engineSize(eS){
+    }
+
+-->
+function overLoadding: for compile time 
+// function overLoading
+//function of same name banaye ja skte hai 
+// argument ka data type ifferent 
+// (agar unka argument number differnt ho)  
+void add(int a, int b){
+    cout<<a+b<<endl;
+}
+// int  add(int a, int b){
+//     cout<<a+b<<endl;
+//     return a+b;
+// }
+void add(int a, double b){
+    cout<<a+b<<endl;
+}
+void add(int a){
+    cout<<a+10<<endl;
+}
+
+constructoroverloadding 
+--->
+abstruction --->access modifiers
+encapsulation--->class same
+polyMOrphism ye padh rahe hai 
+
+
+
+--->
+InHeritance
+class Car{
+public:
+    int tyreSize;
+    int engineSize;
+    int lights;
+    string companyName;
+
+};
+class Bike{
+public: 
+    int tyreSize;
+    int engineSize;
+    int lights;
+    int handlSize;
+    string companyName;
+// initialisation list 
+    Bike(int tS, int eS=200):tyreSize(tS),engineSize(eS){}
+};
+
+---->
+public ko protect bana skte hai  and protected ko private and ulta flow possible nahi hai 
+public--->protect--->private
+
+for InHeritance 
+class <child_name> :<access spcifers> <parent class>{ 
+public/protected/private
+}
+
+public is least secured then protected then private;
+and upper se niche nahi ja kste hai 
+
+if( a me  public,private,protected hai)
+protected child ke liye use krne me  private nahi aayega but protect and priate variable of a inherit hoo jjaynge a me 
+similarly public use krne pr keval public wale hi inherit hoga
+and priate use krne pr saare in herit ho  jjaynge 
+public ko private and protected bana skte hai but 
+ultra nnahi krw skte 
+
+
+
+--->
+KUCH PROPERTY HI KEVAL INHERIT HOTI HAI 
+protected ko class ke bar acess nahi krte hai  bs inherit kr skte ho
+
+a        B, C, D,--->public    protected        private 
+|
+private               *              *             *   
+protected           protect             protect    priate             
+public              public            protected     priate                    
+
+
+
+---->
+we have seen waht is probleum with pointers and now its is time to take waht is its soln
+VERTUAL function
+virtual function kya krte hai ki wo make sure the corrcet function is called for an object, 
+regardless of the pointer used for calling it
+
+
+------->
+vertual                                               
+*vpr ;                                                             
+*vtable;                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             

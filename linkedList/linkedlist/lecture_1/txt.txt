@@ -1,0 +1,81 @@
+class Student{
+public: 
+    string name;
+    int rno;
+    float marks;
+};
+    int x; //initialisation
+    x=2;//decleration
+    Student s1;
+    s1.marks=6.71;
+    s1.name="aditya";
+    s1.rno=53;
+    main ke bahar ---> taki sb access kr le 
+--->construtor
+agar ek call me multiple cheezo ko initialise krna hai na to constructor ki hi helps se krte hai 
+order same hona chahiye 
+class Student{
+public: 
+    string name;
+    int rno;
+    float marks;
+    Student(string n, int r, float m ){
+        name=n;
+        rno=r;
+        marks =m;
+    }
+    Student(string name, int rno, float marks ){ wrong interprete nahi kr payega computer 
+        name=name;
+        rno=rno;
+        marks =marks;
+    }
+     Student(string name, int rno, float marks ){ 
+        this->name=name;
+        this->rno=rno;
+        this->marks =marks;
+    }
+
+};
+
+int main(){
+    int x; //initialisation
+    x=2;//decleration
+    // Student s1;
+    // s1.marks=6.71;
+    // s1.name="aditya";
+    // s1.rno=53;
+    Student s1("aditya",53,6.71);
+}
+
+void change(Student s){////by value pass hui hai to no change 
+    s.name="aman";  //by value pass hui hai to no change 
+}
+pass by refernv=ce and pass by value in opps 
+ Student s1("aditya",53,6.71);
+    // cout<<s1.name;
+    change(s1);
+    cout<<s1.name;
+---->
+
+void change(Student &s){////by refernce  pass hui hai to no change 
+    s.name="aman";  //by value pass hui hai to no change 
+}
+pass by refernv=ce and pass by value in opps 
+ Student s1("aditya",53,6.71);
+    // cout<<s1.name;
+    change(s1);
+    cout<<s1.name;
+
+2nd way to pass by refernce
+by arrow fuction 
+
+
+
+
+
+
+
+
+----->
+drwabacks of arrays is that 
+written in copy 
